@@ -24,11 +24,10 @@ client.on('ready', (c) => {
 client.on('interactionCreate', (interaction) => {
     if (!interaction.isChatInputCommand()) return;
 
-    if (interaction.commandName === 'channel') {
+    if (interaction.commandName === 'rr') {
         const embed = new EmbedBuilder()
-        .setTitle("Ivan Law\'s YT channel")
-        .setDescription('ячс')
-        .setThumbnail('чяс')
+        .setTitle("Totally not a rickroll")
+        .setDescription('[Click to be redirected!](<ttps://www.youtube.com/watch?v=T5pfhvi9eOc>)')
         .setColor(0x11cc0e)
         .setTimestamp();
         interaction.reply({ embeds: [embed] });
@@ -111,8 +110,8 @@ client.on('interactionCreate', (interaction) => {
                     inline: false
                 },
                 {
-                    name: '`Channel`',
-                    value: '> Get the link to a channel on YouTube',
+                    name: '`rr`',
+                    value: '> Totally not a rickroll',
                     inline: false
                 },
                 {
