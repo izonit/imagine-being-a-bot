@@ -12,40 +12,6 @@ const client = new Client({
     ],
 });
 
-/* let status = [         ========> Possible statuses that I may be using in the future updates <=======
-    {
-        name: 'bedwars',
-        type: ActivityType.Playing,
-    },
-    {
-        name: 'MC Bedwars w/ Frnds',
-        type: ActivityType.Watching,
-    },
-    {
-        name: 'Roblox',
-        type: ActivityType.Streaming,
-        url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    },
-    {
-        name: 'SBotify',
-        type: ActivityType.Listening,
-    },
-    {
-        name: 'Patranak\'s lore',
-        type: ActivityType.Listening,
-    },
-    {
-        name: 'Genshin Impact',
-        type: ActivityType.Playing,
-    },
-] */
-
-/* setInterval(() => {
-        let random = Math.floor(Math.random() * status.length);   ========> Add this in case you want to use random statuses <=======
-        client.user.setActivity(status[random]);
-    }, 20000); */
-
-
 client.on('ready', (c) => {
     console.warn("The bot is ready, logged in as " + c.user.tag);
 
